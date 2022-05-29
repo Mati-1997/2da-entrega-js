@@ -25,7 +25,8 @@
           <th scope="col">#</th>
           <th scope="col">Item</th>
           <th scope="col">Cantidad</th>
-          <th scope="col">Acción</th>
+          <th scope="col">Acción 1</th>
+          <th scope="col">Acción 2</th>
           <th scope="col">Total</th>
         </tr>
       </thead>
@@ -46,8 +47,9 @@
       <button class="btn btn-danger btn-sm" id="vaciar-carrito">
         vaciar todo
       </button>
+      <!-- <input type="button" class="btn btn-info btn-sm" id="finalizar" value="Finalizar compra"> -->
     </td>
-    <td><input type="button" class="btn btn-info btn-sm" id="finalizar" value="comprar"></td>
+    <td><input type="button" class="btn btn-info btn-sm" id="finalizar" value="Finalizar compra"></td>
     <td class="font-weight-bold">$ <span>5000</span></td>
   </template>
 
@@ -57,11 +59,14 @@
       <td>Café</td>
       <td>1</td>
       <td>
-        <button class="btn btn-info btn-sm">
-          +
-        </button>
         <button class="btn btn-danger btn-sm">
           -
+        </button>
+
+      </td>
+      <td>
+        <button class="btn btn-info btn-sm">
+          +
         </button>
       </td>
       <td>$ <span>500</span></td>
@@ -76,7 +81,7 @@
         <div class="card-body">
           <h5>Titulo</h5>
           <p>precio</p>
-          <button class="btn btn-dark">Comprar</button>
+          <button class="btn btn-dark">Agregar</button>
         </div>
       </div>
     </div>
