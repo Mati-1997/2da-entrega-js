@@ -12,6 +12,7 @@ let carrito = {};
 //Eventos
 
 document.addEventListener("DOMContentLoaded", () => {
+  //FETCH
   fetchData();
   if (localStorage.getItem("carrito")) {
     carrito = JSON.parse(localStorage.getItem("carrito"));
@@ -180,4 +181,3 @@ const btnAccion = (e) => {
 
   e.stopPropagation();
 };
-
