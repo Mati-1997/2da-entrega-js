@@ -74,7 +74,7 @@ const setCarrito = (objeto) => {
   if (carrito.hasOwnProperty(producto.id)) {
     producto.cantidad = carrito[producto.id].cantidad + 1;
   }
-
+  //SPREAD
   carrito[producto.id] = { ...producto };
   pintarCarrito();
 };
@@ -162,6 +162,7 @@ const btnAccion = (e) => {
 
     const producto = carrito[e.target.dataset.id];
     producto.cantidad++;
+    //SPREAD
     carrito[e.target.dataset.id] = { ...producto };
     pintarCarrito();
   }
@@ -179,3 +180,18 @@ const btnAccion = (e) => {
 
   e.stopPropagation();
 };
+
+alert("Bienvenido al carrito. Para ingresar debes ser mayor de 18");
+const usuario = {
+  nombre: prompt("Ingresa tu nombre"),
+  edad: prompt("ingresa tu edad"),
+};
+//Desestructuracion
+const { nombre, edad } = usuario;
+let permiso;
+//OPERADOR TERNARIO
+edad >= 18 ? (permiso = true) : (permiso = false);
+
+while (edad < 18) {
+  prompt("Edad incorrecta. Vuelve a ingresar tu edad");
+}
